@@ -2,15 +2,29 @@
 
 nomes = ["Alana", "Nata", "Rafhael", "Lucas", "Kauany"]
 
-def rev(a):
-    nomes.remove(a)
-
 while len(nomes) > 4:
     print(nomes)
-    esco = input("Escolha um para remover: ")
+    esco = input("Escolha um para ser removido: ")
 
-    if esco == "Alana" or esco == "Nata" or esco == "Rafhael" or esco == "Lucas" or esco == "Kauany":
-        rev(esco)
+    if esco == "Alana":
+        nomes.remove("Alana")
+        print(nomes)
+
+    elif esco == "Nata":
+        nomes.remove("Nata")
+        print(nomes)
+
+    elif esco == "Rafhael":
+        nomes.remove("Rafhael")
+        print(nomes)
+
+    elif esco == "Lucas":
+        nomes.remove("Lucas")
+        print(nomes)
+
+    elif esco == "Kauany":
+        nomes.remove("Kauany")
+        print(nomes)
 
     else:
         print("Escolha inválida")
