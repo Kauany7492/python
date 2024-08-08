@@ -11,6 +11,7 @@ while len(nomes) > 4:
 
     if esco == "Alana" or esco == "Nata" or esco == "Rafhael" or esco == "Lucas" or esco == "Kauany":
         rev(esco)
+        print(nomes)
 
     else:
         print("Escolha inválida")
