@@ -55,3 +55,17 @@ supermercado = {
 print(supermercado)
 supermercado["arroz"]="R$15,40"
 print(supermercado)
+
+#Dicionario: remover estrutura
+#nomedodicionario.pop(valor a ser removido)
+
+#Ex.:
+
+acougue = {
+    "carne1" : "bovina",
+    "carne2" : "frango",
+    "carne3" : "porco"
+}
+print(acougue)
+acougue.pop("carne2")
+print(acougue)
