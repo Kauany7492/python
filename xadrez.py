@@ -1,6 +1,11 @@
 import random
-nome = ["Lucas", "Nata", "Alana", "Kauany", "Rafhael"]
-print("Os prticipantes são: ", nome)
+nome = []
+participantes = input("Tem mais paticipantes: ")
+
+while participantes != "nao":
+    nome += input("Digite o nom do novo participante")
+else:
+    print("Os prticipantes são: ", nome)
 
 def jogo():
    a = random.randrange(0, len(nome))
@@ -55,6 +60,11 @@ def pontos():
         break
     else:
         print("Rafhael tem ", 0, "pontos")
-        
-jogo()
-pontos()
+
+
+partidas = input("As partidas acabaram, sim ou nao: ")
+while partidas != "sim":
+    jogo()
+    pontos()
+else:
+    print("Os jogos acabaram")
