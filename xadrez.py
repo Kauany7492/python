@@ -1,18 +1,22 @@
 import random
-nome = ["Lucas","Nata","Alana","Kauany","Rafhael"]
+nome = ["Lucas","Nata","Alana","Kauany","Rafhae"]
 
 print("Os prticipantes são: ", nome)
 
-def jogo():
-   a = random.randrange(0, len(nome))
-   b = random.randrange(0, len(nome))
+def partida():
+    a = random.randrange(0, len(nome))
+    b = random.randrange(0, len(nome))
 
-   if a != b:
-        print(nome[a],"vai jogar contra", nome[b])
+    if a != b:
+        print(nome[a],"e", nome[b])
 
+    partic = print(nome[a],"vai jogar contra", nome[b])
 
-def pontos():
     jogo = input("Quem ganhou o jogo: ")
+    while jogo == "empate":
+        i = 0
+        i += 0.5
+        print(partic, "ganharam 0,5 ponto(s)")
     while jogo == "Lucas":
         i = 0
         i += 1
@@ -21,7 +25,6 @@ def pontos():
     else:
         print("Lucas tem ", 0, "pontos")
         
-
     while jogo == "Nata":
         i = 0
         i += 1
@@ -29,7 +32,6 @@ def pontos():
         break
     else:
         print("Nata tem ", 0, "pontos")
-
 
     while jogo == "Alana":
         i = 0
@@ -39,7 +41,6 @@ def pontos():
     else:
         print("Alana tem ", 0, "pontos")
 
-
     while jogo == "Kauany":
         i = 0
         i += 1
@@ -47,7 +48,6 @@ def pontos():
         break
     else:
         print("Kauany tem ", 0, "pontos")
-
 
     while jogo == "Rafhael":
         i = 0
@@ -60,7 +60,6 @@ def pontos():
 
 partidas = input("As partidas acabaram, sim ou nao: ")
 while partidas != "sim":
-    jogo()
-    pontos()
+   partida()
 else:
     print("Os jogos acabaram")
