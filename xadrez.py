@@ -26,6 +26,7 @@ def pontos():
         i += 1
         print(jogo, "tem", i, "ponto(s)")
         if jogo == "empate":
+            i = 0
             i += 0.5
             print("Ambos tem", i,"ponto(s)")
     else:
@@ -37,6 +38,7 @@ def pontos():
         i += 1
         print(jogo, "tem", i, "ponto(s)")
         if jogo == "empate":
+            i = 0
             i += 0.5
             print("Ambos tem", i,"ponto(s)")
     else:
