@@ -6,6 +6,7 @@ participantes = input("Tem mais paticipantes: ")
 
 while participantes != "nao":
     nome += [input("Digite o nom do novo participante: ")]
+    participantes = input("Tem mais paticipantes: ")
 else:
     print("Os prticipantes são: ", nome)
 
