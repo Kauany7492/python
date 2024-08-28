@@ -16,7 +16,8 @@ def partida():
     while jogo == "empate":
         i = 0
         i += 0.5
-        print(partic, "ganharam 0,5 ponto(s)")
+        print(nome[a],"e",nome[b], "ganharam 0,5 ponto(s)")
+        break
     while jogo == "Lucas":
         i = 0
         i += 1
