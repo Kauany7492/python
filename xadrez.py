@@ -24,23 +24,23 @@ def pontos():
     while jogo == nome:
         i = 0
         i += 1
-        print(nome[a], "tem", i, "ponto(s)")
+        print(jogo, "tem", i, "ponto(s)")
         if jogo == "empate":
             i += 0.5
-            print(nome[a], "e", nome[b], "tem", i,"ponto(s)")
+            print("Ambos tem", i,"ponto(s)")
     else:
-        print(nome[a], "tem", i, "pontos")
+        print(jogo, "tem", i, "pontos")
 
 
     while jogo == nome:
         i = 0
         i += 1
-        print(nome[b], "tem", i, "ponto(s)")
+        print(jogo, "tem", i, "ponto(s)")
         if jogo == "empate":
             i += 0.5
-            print(nome[a], "e", nome[b], "tem", i,"ponto(s)")
+            print("Ambos tem", i,"ponto(s)")
     else:
-        print(nome[b], "tem", i, "pontos")
+        print(jogo, "tem", i, "pontos")
     
 
 
