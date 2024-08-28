@@ -1,14 +1,7 @@
 import random
-nome = []
-nome += [input("Digite o nom do novo participante: ")]
-print(nome)
-participantes = input("Tem mais paticipantes: ")
+nome = ["Lucas","Nata","Alana","Kauany","Rafhael"]
 
-while participantes != "nao":
-    nome += [input("Digite o nom do novo participante: ")]
-    participantes = input("Tem mais paticipantes: ")
-else:
-    print("Os prticipantes são: ", nome)
+print("Os prticipantes são: ", nome)
 
 def jogo():
    a = random.randrange(0, len(nome))
@@ -20,32 +13,49 @@ def jogo():
 
 def pontos():
     jogo = input("Quem ganhou o jogo: ")
-
-    while jogo == nome:
+    while jogo == "Lucas":
         i = 0
         i += 1
-        print(jogo, "tem", i, "ponto(s)")
-        if jogo == "empate":
-            i = 0
-            i += 0.5
-            print("Ambos tem", i,"ponto(s)")
+        print("Lucas tem ", i, "ponto(s)")
+        break
     else:
-        i = 0
-        print(jogo, "tem", i, "pontos")
+        print("Lucas tem ", 0, "pontos")
+        
 
-
-    while jogo == nome:
+    while jogo == "Nata":
         i = 0
         i += 1
-        print(jogo, "tem", i, "ponto(s)")
-        if jogo == "empate":
-            i = 0
-            i += 0.5
-            print("Ambos tem", i,"ponto(s)")
+        print("Nata tem ", i, "ponto(s)")
+        break
     else:
+        print("Nata tem ", 0, "pontos")
+
+
+    while jogo == "Alana":
         i = 0
-        print(jogo, "tem", i, "pontos")
-    
+        i += 1
+        print("Alana tem ", i, "ponto(s)")
+        break
+    else:
+        print("Alana tem ", 0, "pontos")
+
+
+    while jogo == "Kauany":
+        i = 0
+        i += 1
+        print("Kauany tem ", i, "ponto(s)")
+        break
+    else:
+        print("Kauany tem ", 0, "pontos")
+
+
+    while jogo == "Rafhael":
+        i = 0
+        i += 1
+        print("Rafhael tem ", i, "ponto(s)")
+        break
+    else:
+        print("Rafhael tem ", 0, "pontos")
 
 
 partidas = input("As partidas acabaram, sim ou nao: ")
