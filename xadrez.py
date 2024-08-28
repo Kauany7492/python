@@ -8,7 +8,7 @@ def jogo():
 
    if a != b:
         print(nome[a],"vai jogar contra", nome[b])
-    else:
+   else:
        jogo()
 
 
