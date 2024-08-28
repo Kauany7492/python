@@ -5,7 +5,7 @@ print("Os prticipantes são: ", nome)
 def jogo():
    a = random.randrange(0, len(nome))
    b = random.randrange(0, len(nome))
-   print(a,"vai jogar contra", b)
+   print(nome[a],"vai jogar contra", nome[b])
 
 
 def pontos():
