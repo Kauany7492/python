@@ -8,8 +8,6 @@ def jogo():
 
    if a != b:
         print(nome[a],"vai jogar contra", nome[b])
-   else:
-       jogo()
 
 
 def pontos():
@@ -18,6 +16,7 @@ def pontos():
         i = 0
         i += 1
         print("Lucas tem ", i, "ponto(s)")
+        break
     else:
         print("Lucas tem ", 0, "pontos")
         
@@ -26,6 +25,7 @@ def pontos():
         i = 0
         i += 1
         print("Nata tem ", i, "ponto(s)")
+        break
     else:
         print("Nata tem ", 0, "pontos")
 
@@ -34,6 +34,7 @@ def pontos():
         i = 0
         i += 1
         print("Alana tem ", i, "ponto(s)")
+        break
     else:
         print("Alana tem ", 0, "pontos")
 
@@ -42,6 +43,7 @@ def pontos():
         i = 0
         i += 1
         print("Kauany tem ", i, "ponto(s)")
+        break
     else:
         print("Kauany tem ", 0, "pontos")
 
@@ -50,6 +52,7 @@ def pontos():
         i = 0
         i += 1
         print("Rafhael tem ", i, "ponto(s)")
+        break
     else:
         print("Rafhael tem ", 0, "pontos")
         
