@@ -1,4 +1,5 @@
 import random
+import uuid
 nome = ["Lucas","Nata","Alana","Kauany","Rafhae"]
 
 print("Os prticipantes são: ", nome)
@@ -58,6 +59,10 @@ def partida():
     else:
         print("Rafhael tem ", 0, "pontos")
 
+
+class CadastroEvento:
+    def __init__(self):
+        self.usuarios = {}
 
 partidas = input("As partidas acabaram, sim ou nao: ")
 while partidas != "sim":
