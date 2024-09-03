@@ -1,71 +1,96 @@
 import random
 import uuid
-nome = ["Lucas","Nata","Alana","Kauany","Rafhae"]
-
-print("Os prticipantes são: ", nome)
-
-def partida():
-    a = random.randrange(0, len(nome))
-    b = random.randrange(0, len(nome))
-
-    if a != b:
-        print(nome[a],"e", nome[b])
-
-    partic = print(nome[a],"vai jogar contra", nome[b])
-
-    jogo = input("Quem ganhou o jogo: ")
-    while jogo == "empate":
-        i = 0
-        i += 0.5
-        print(nome[a],"e",nome[b], "ganharam 0,5 ponto(s)")
-        break
-    while jogo == "Lucas":
-        i = 0
-        i += 1
-        print("Lucas tem ", i, "ponto(s)")
-        break
-    else:
-        print("Lucas tem ", 0, "pontos")
-        
-    while jogo == "Nata":
-        i = 0
-        i += 1
-        print("Nata tem ", i, "ponto(s)")
-        break
-    else:
-        print("Nata tem ", 0, "pontos")
-
-    while jogo == "Alana":
-        i = 0
-        i += 1
-        print("Alana tem ", i, "ponto(s)")
-        break
-    else:
-        print("Alana tem ", 0, "pontos")
-
-    while jogo == "Kauany":
-        i = 0
-        i += 1
-        print("Kauany tem ", i, "ponto(s)")
-        break
-    else:
-        print("Kauany tem ", 0, "pontos")
-
-    while jogo == "Rafhael":
-        i = 0
-        i += 1
-        print("Rafhael tem ", i, "ponto(s)")
-        break
-    else:
-        print("Rafhael tem ", 0, "pontos")
-
 
 class CadastroEvento:
-    def __init__(self):
+    def _init_(self, categoria, vitorias):
         self.usuarios = {}
+        self.categoria = categoria
+        self.vitorias = vitorias
 
-partidas = input("As partidas acabaram, sim ou nao: ")
-while partidas != "sim":
-   partida()
-else:
-    print("Os jogos acabaram")
+    def gerar_id(self):
+        return str(uuid.uuid4())
+
+    def cadastrar_usuario(self, nome):
+        usuario_id = self.gerar_id()
+        self.usuarios[usuario_id] = nome
+        print(f"Usuário {nome} cadastrado com ID: {usuario_id} na categoria: {self.categoria}")
+
+    def listar_usuarios(self):
+        if not self.usuarios:
+            print("Nenhum usuário cadastrado.")
+            return
+        for usuario_id, nome in self.usuarios.items():
+            print(f"ID: {usuario_id}, Nome: {nome}, Categoria: {self.categoria}")
+
+def menu():
+    cadastro = CadastroEvento()
+
+    while True:
+        print("\n Menu:")
+        print("1- Cadastrar novo usuário")
+        print("2- Listar usuários")
+        print("3- Sair")
+
+        escolha = input("Escolha uma opção(número): ")
+
+        if escolha == "1":
+            nome = input("Digite o nome do usuário: ")
+            cadastro.categoria = input("Digite a categoria em que o usuário jogará: ")
+            cadastro.cadastrar_usuario(nome)
+        elif escolha == "2":
+            cadastro.listar_usuarios()
+        elif escolha == "3":
+            print("Saindo do programa...")
+            break
+        else:
+            print("Opção inválida, por favor escolha novamente.")
+
+class Participante:
+    def __init__(self, nome, categoria, vitorias):
+        self.nome = nome
+        self.categoria = categoria
+        self.vitorias = vitorias
+
+def cadastrar_participantes():
+    participantes = []
+    participantes.append(CadastroEvento.listar_usuarios)
+    return participantes
+
+def sortear_participantes(participantes):
+    categorias = {}
+
+    for participante in participantes:
+        key = (participante.categoria, participante.vitorias)
+        if key not in categorias:
+            categorias[key] = []
+        categorias[key].append(participante)
+
+    possiveis_sorteios = [v for v in categorias.values() if len(v) > 1]
+    if not possiveis_sorteios:
+        print("Não há participantes que atendem os critérios de sorteio.")
+        return None
+
+    sorteados = random.choice(possiveis_sorteios)
+    return random.sample(sorteados, 2)
+
+def atualizar_vitorias(participante):
+    participante.vitorias += 1
+
+def main():
+    participantes = cadastrar_participantes()
+    
+    print("Participantes cadastrados:")
+    for p in participantes:
+        print(f"{p.nome} - Categoria: {p.categoria}, Vitórias: {p.vitorias}")
+    
+    sorteados = sortear_participantes(participantes)
+    if sorteados:
+        print(f"\nParticipantes sorteados para jogar: {sorteados[0].nome} e {sorteados[1].nome}")
+
+        vencedor = random.choice(sorteados)
+        atualizar_vitorias(vencedor)
+        print(f"\n{vencedor.nome} venceu a partida e agora tem {vencedor.vitorias} vitórias!")
+
+if __name__ == "_main_":
+    menu()
+    main()
