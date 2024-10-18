@@ -1,4 +1,4 @@
-#6)Fazer um código que mostre a lista de contas e remova uma delas
+#5)Fazer um código que mostre a lista de contas e remova uma delas
 
 nomes = ["Alana", "Nata", "Rafhael", "Lucas", "Kauany"]
 
