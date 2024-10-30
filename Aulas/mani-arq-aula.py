@@ -1,4 +1,9 @@
 #O QUE É: 
+
+    # É utilizado para analise de dados com o python
+
+#INICIO:
+
     #para abrir um arquivo utilizamos a função open() com dois parâmetros 
     #sendo eles o nome do arquivo e o modo/método
 
@@ -40,5 +45,6 @@ print(f.read())
     # os.remove("nome-do-arquivo.txt")
 
 #BIBLIOTECA OS:
+
     # os.path.exists("nome-do-arquivo.txt") - verifica se o arquivo existe
     # os.rmdir("nome-da-pasta") - exclui a pasta inteira(se estiver vazia)
