@@ -1,3 +1,7 @@
+#Neste arquivo você verá o básico sobre o que e como funciona os dicionários em python. Este arquivo pode teajudar a aprender de maneira simplis como funcionam os dicionários em python.
+
+
+
 #Dicionario: variavel que recebe mais de um valor. Os valores sao agrupados em pares.
 #nomedodicionario={"variavel":"valor", "variavel":"valor1", "variave2":"valor2"}
 #Dicionario: adicionar estrutura
