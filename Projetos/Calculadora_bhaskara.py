@@ -1,4 +1,8 @@
-# calcular o valor de x com a formula de bhaskara 
+# Utilizando seus conhecimentos de python faça um programa que calcule o valor de x com a formula de bhaskara.
+# OBS.: O código abaixo é uma das maneiras para resolver a questão acima.
+
+
+
 import math
 
 def bhaskara( a, b, c ):
