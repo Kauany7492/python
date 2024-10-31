@@ -52,3 +52,19 @@ print(f.read())
 
     # os.path.exists("nome-do-arquivo.txt") - verifica se o arquivo existe
     # os.rmdir("nome-da-pasta") - exclui a pasta inteira(se estiver vazia)
+
+# Vídeos sobre manipulação de arquivos:
+'''
+1-Vídeo sobre manipulação de arquivos de texto(ler, editar e criar):
+https://youtu.be/AvUG8wZMh_E?si=QBniMd1Hx01b3OF0
+
+2-Vídeo sobre manipulação de arquivos(iniciantes):
+https://youtu.be/G-kUBX0U8IQ?si=panU0A24lANsLW0I
+
+3-Série de vídeos sobre manipulação de arquivos(txt, CSV e Jason) básico:
+1-https://youtu.be/10Pdysnsihg?si=8lghx9aWQEDl22qm
+2-https://youtu.be/xIC2xyLmo7M?si=-PQMaqTtpCa_to_Z
+3-https://youtu.be/6iAOrL5TBe8?si=wc_7uSI8rwiljsCa
+4-https://youtu.be/yNFiFQ-AI4Q?si=55I72FgNSQV_CDOm
+5-https://youtu.be/S26BbiBC4lY?si=iBQg4hGZZT74YsbN
+'''
