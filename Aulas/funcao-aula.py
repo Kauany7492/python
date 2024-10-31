@@ -28,3 +28,12 @@ def nomes(nome):
 
 name = input("Digite seu nome: ")
 nomes(name)
+
+# Videos sobre função:
+'''
+1- Vídeo sobre Funções(básico):
+https://youtu.be/XbvSBegg09s?si=ByvxvVbsnRhaJFep
+
+2- Vídeo sobre o que é uma função:
+https://youtu.be/kYnPpUn8_kA?si=e2KMhyBqsFLyL1bG
+'''
