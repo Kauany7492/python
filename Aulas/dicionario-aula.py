@@ -1,11 +1,12 @@
-#Neste arquivo você verá o básico sobre o que e como funciona os dicionários em python. Este arquivo pode teajudar a aprender de maneira simplis como funcionam os dicionários em python.
+#Neste arquivo você verá o básico sobre o que é como funciona os dicionários em python. Este arquivo pode teajudar a aprender de maneira simplis como funcionam os dicionários em python.
 
 
 
-#Dicionario: variavel que recebe mais de um valor. Os valores sao agrupados em pares.
-#nomedodicionario={"variavel":"valor", "variavel":"valor1", "variave2":"valor2"}
-#Dicionario: adicionar estrutura
-#nomedodicionario[variavel]=valor
+# Dicionário: variavel que recebe mais de um valor. Os valores sao agrupados em pares.
+    # nomedodicionario={"variavel":"valor", "variavel1":"valor1", "variavel2":"valor2"}
+
+# Dicionário: adicionar estrutura
+    # nomedodicionario[variavel]=valor
 
 #Ex.:
 
@@ -18,8 +19,8 @@ print(carro)
 carro["cor"]="vermelho"
 print(carro)
 
-#Dicionario: alterar estrutura
-#nomedodicionario[variavel]=valor alterado
+# Dicionário: alterar estrutura
+    #nomedodicionario[variavel]=valor alterado
 
 #Ex.:
 
@@ -32,8 +33,8 @@ print(supermercado)
 supermercado["arroz"]="R$15,40"
 print(supermercado)
 
-#Dicionario: remover estrutura
-#nomedodicionario.pop(valor a ser removido)
+# Dicionário: remover estrutura
+    #nomedodicionario.pop(valor a ser removido)
 
 #Ex.:
 
