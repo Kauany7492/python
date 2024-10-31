@@ -1,7 +1,12 @@
+#Neste arquivo você verá o básico sobre o que é e como funciona a lista.
+
+
+
 #Lista: variavel que recebe mais de um valor.
-#nomedalista=["valor1", "valor2", "valor3"]
+  #nomedalista=["valor1", "valor2", "valor3"]
+
 #Lista: alterar estrutura
-#nomedalista[numero do elemento a ser alterado]=elemento alterado
+  #nomedalista[numero do elemento a ser alterado]=elemento alterado
 
 #Ex.:
 
@@ -11,7 +16,7 @@ mercado[3]="abacaxi"
 print(mercado)
 
 #Lista: adicionar estrutura
-#nomedalista.append(item a ser adicionado)
+  #nomedalista.append(item a ser adicionado)
 
 #Ex.:
 
@@ -21,7 +26,7 @@ letras.append("e")
 print(letras)
 
 #Lista: remover estrutura
-#nomedalista.remove(item a ser removido)
+  #nomedalista.remove(item a ser removido)
 
 #Ex.:
 
