@@ -35,3 +35,8 @@ print(numeros)
 numeros.remove(6)
 print(numeros)
 
+# Vídeo sobre tipos de listas:
+'''
+1-Vídeo sobre dicionários:
+https://youtu.be/YwENuegbpEM?si=T4Ogq_AqlB_TKM4l
+'''
