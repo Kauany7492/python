@@ -46,3 +46,12 @@ acougue = {
 print(acougue)
 acougue.pop("carne2")
 print(acougue)
+
+# Vídeos sobre dicionários e tipos de listas:
+'''
+1-Vídeo sobre lista, tupla, conjuntos e dicionários:
+https://youtu.be/0zYuLLIzPIQ?si=jl5YlEMU4Ij9dhpB
+
+2-Vídeo sobre dicionários:
+https://youtu.be/YwENuegbpEM?si=T4Ogq_AqlB_TKM4l
+'''
