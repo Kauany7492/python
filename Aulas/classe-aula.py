@@ -57,3 +57,14 @@ del p1
 class vazia:
    pass
 
+# Vídeos sobre classes:
+'''
+1-Vídeo sobre classes(básico): 
+https://youtu.be/97A_Cyyh-eU?si=E1ndmCnu5uXWAQ3U
+
+2-Vídeo sobre classes(básico, self e init):
+https://youtu.be/gomDSZaay3E?si=jDtW_IPs5_UDhFcO
+
+3-Vídeo sobre orientação a objeto:
+https://youtu.be/tS9LETaEomI?si=OpP9PIyIP_smhWw6
+'''
