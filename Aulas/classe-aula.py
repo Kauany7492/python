@@ -1,6 +1,11 @@
+#Neste arquivo você verá um resumo sobre o que são classes e como elas funcionam de uma maneira bem simples.
+#OBS.: se você não souber o básico de python este arquivo pode ser muito complexo e ou desnecessári para seus objetivo. Mas você pode dar uma conferida em outras aulas que se encontram nesta mesma pasta.
+
+
+
 #Uma classe é como um construtor de objeto ou um "projeto" para criar objetos.
 #class nome-da-classe: 
-#   | comovai ser esseobjeto
+#   | como vai ser esse objeto
 
 #Ex.: 
 
