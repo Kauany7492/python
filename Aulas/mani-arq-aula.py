@@ -1,3 +1,7 @@
+#Neste arquivo você verá o básico sobre o que é e como funciona a manipulação de arquivos em python.
+
+
+
 #O QUE É: 
 
     # É utilizado para analise de dados com o python
