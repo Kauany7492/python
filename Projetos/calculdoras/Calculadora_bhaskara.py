@@ -1,8 +1,3 @@
-# Utilizando seus conhecimentos de python faça um programa que calcule o valor de x com a formula de bhaskara.
-# OBS.: O código abaixo é uma das maneiras para resolver a questão acima.
-
-
-
 import math
 
 def bhaskara( a, b, c ):
@@ -20,4 +15,3 @@ valor_a = int(input("\nDigite o valor de a: "))
 valor_b = int(input("\nDigite o valor de b: "))
 valor_c = int(input("\nDigite o valor de c: "))
 bhaskara(valor_a, valor_b, valor_c)
-
