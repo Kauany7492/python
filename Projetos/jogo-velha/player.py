@@ -1,6 +1,7 @@
 import math
 import random
 
+
 class Player:
     def __init__(self, letter):
         self.letter = letter
@@ -24,7 +25,7 @@ class HumanPlayer(Player):
         valid_square = False
         val = None
         while not valid_square:
-            square = input(self.letter + "escolha um movimento (0-8): ")
+            square = input(self.letter + " escolha um movimento (0-8): ")
             try:
                 val = int(square)
                 if val not in game.available_moves():
