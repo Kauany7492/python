@@ -1,7 +1,3 @@
-# Utilizando seus conhecimentos em python crie um programa que simule uma calculadora básica e que faça os seguintes calculos: adição, subtração, mutiplicação e divisão.
-# OBS.: O código abaixo é uma das maneiras de resolver a questão acima.
-
-
 def adicao(a, b):
     return a + b
 
