@@ -1,0 +1,45 @@
+# Neste arquivo você verá o básico de o que são e como funcionam as listas do tipo conjunto.
+
+# O QUE É?
+  #  são listas imutáveis/inalteraveis, não permite valores duplicados e não são ordenadas.
+  
+# SINTAXE:
+  # variável = { "valor1", 2, "valor3", 4.5}
+  # EX.:
+x = {"maca", "banana", "cereja"}
+print(x)
+
+
+# COMO ACESSAR UM ITEM:
+  # for variável in nome-do-conjunto: 
+  #     print(variável)
+x = {"maca", "banana", "cereja"}
+for i in x:
+    print(i)
+
+
+# COMO ADICIONAR UM ITEM NO CONJUNTO:
+    #nome-do-conjunto.add("item")
+x = {"apple", "banana", "cereja"}
+print(x)
+x.add("morango")
+print(x)
+
+    #nome-do-conjunto.update(lista/item)
+x = {'maca', "banana", 'cereja'}
+y = {'vermelho', 'amarelo', 'rosa'}
+print(x, y)
+x.update(y)
+print(x)
+
+
+# COMO REMOVER UM ITEM:
+    #nome-do-conjunto.remove("item a ser removido")
+x = {'maca', 'banana', 'cereja'}
+x.remove("maca")
+print(x)
+
+    #nome-do-conjunto.discard("item a ser removido")
+x = {'maca', 'banana', 'cereja'}
+x.discard("banana")
+print(x)
