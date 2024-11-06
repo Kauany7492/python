@@ -16,3 +16,21 @@ if b < a:
 elif b > a:
   print(f"{b} é maior que {a}")
 
+# Ex.:
+if not b < a:
+  print(f"{a} é menor que {b}")
+elif b > a:
+  print(f"{b} é maior que {a}")
+
+# Ex.:
+if a == 0 and b >= 7:
+  print("a é igual a 0 e b é maior ou igual a 7")
+elif b > a and b == 7:
+  print(f"{b}, {a}")
+
+# Ex.:
+if a < b or b == 0:
+  print(f"{a}, {b}")
+elif b > a or a > b:
+  print(f"{b} é maior que {a}")
+  
