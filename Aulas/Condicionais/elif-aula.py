@@ -6,7 +6,15 @@
   #  | código a ser execultado caso a condição for verdadeira
 
 # CONDICIONAIS:
-  # São as mesmas condicionais que o if.
+  # < ou > → menor que ou maior que
+  # <= ou >= → menor ou igual a ou maior ou igual a
+  # == → igual
+  # != → diferente
+
+  # é possivel adicionar mais de uma condicional com os argumentos eguintes:
+  # or → uma das condições tem que ser verdadeira.
+  # and → ambas as condições tem que ser verdadeiras.
+  # not → inverte a condição.
 
 # Ex.:
 a = 0
