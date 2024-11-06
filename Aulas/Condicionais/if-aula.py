@@ -14,6 +14,11 @@
   # == → igual
   # != → diferente
 
+  # é possivel adicionar mais de uma condicional com os argumentos eguintes:
+  # or → uma das condições tem que ser verdadeira.
+  # and → ambas as condições tem que ser verdadeiras.
+  # not → inverte a condição.
+
 # Ex.:
 a = 0
 b = 3
@@ -21,3 +26,14 @@ b = 3
 if b > a:
   print(f"{a} é menor que {b}.")
 
+# Ex.:
+if not b < a:
+  print(f"{a} é menor que {b}")
+
+# Ex.:
+if a == 0 and b >= 3:
+  print("a é igual a 0 e b é maior ou igual a 3")
+
+# Ex.:
+if a < b or b == 0:
+  print(f"{a}, {b}")
