@@ -36,7 +36,7 @@ class HumanPlayer(Player):
 
         return val
         
-def GeniusComputerPlayer(Player):
+def SmartComputerPlayer(Player):
     def __init__(self, letter):
         super().__init__(letter)
         
