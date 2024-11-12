@@ -1,8 +1,8 @@
 
 def montante(capital, taxa, tempo):
   montante = capital*(1 + (taxa/100))**tempo
-  print(f"M = {capital} × ( 1 + ({taxa} ÷ 100))^tempo")
-  print(f"M = {montante})
+  print(f"M = {capital} × ( 1 + {taxa/100})^tempo")
+  print(f"M = {montante}")
 
 
 capital1 = float(input("Digite o capital: "))
