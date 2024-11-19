@@ -1,13 +1,7 @@
-#Neste arquivo você verá o básico sobre o que é e como funciona a manipulação de arquivos em python.
-
-
-
 #O QUE É: 
-
     # É utilizado para analise de dados com o python
 
 #INICIO:
-
     #para abrir um arquivo utilizamos a função open() com dois parâmetros 
     #sendo eles o nome do arquivo e o modo/método
 
@@ -40,12 +34,33 @@
 f = open('meuarquivo.txt', 'w')
 f.write("Ola, seja bem vindo(a)")
 f.close()
+
 f = open('meuarquivo.txt', 'r')
 print(f.read()) 
+f.close()
+
+# APROFUNDAMENTO:
+    # você pode escrever o mesmo código acima usando uma função "with".
+    # com a função "with" você não precisa fechar o arquivo, a função fecha automática.
+
+# SINTAXE:
+    # with open('arquivo.txt', 'modulo/formato') as nome-da-variavel:
+        # | o que você quer fazer com o arquivo
+
+#Ex.:
+
+with open('meuarquivo.txt', 'w') as f:
+    f.write("Ola, seja bem vindo(a)")
+    
+with open('meuarquivo.txt', 'r') as f:
+    print(f.read()) 
 
 #EXCLUIR ARQUIVO:
 
-    # para excluir um arquivo é necessário importar a biblioteca os
+    # para excluir um arquivo é necessário importar a biblioteca "os"
+
+# SINTAXE:
+
     # os.remove("nome-do-arquivo.txt")
 
 #BIBLIOTECA OS:
@@ -54,6 +69,7 @@ print(f.read())
     # os.rmdir("nome-da-pasta") - exclui a pasta inteira(se estiver vazia)
 
 # Vídeos sobre manipulação de arquivos:
+
 '''
 1-Vídeo sobre manipulação de arquivos de texto(ler, editar e criar):
 https://youtu.be/AvUG8wZMh_E?si=QBniMd1Hx01b3OF0
@@ -62,9 +78,9 @@ https://youtu.be/AvUG8wZMh_E?si=QBniMd1Hx01b3OF0
 https://youtu.be/G-kUBX0U8IQ?si=panU0A24lANsLW0I
 
 3-Série de vídeos sobre manipulação de arquivos(txt, CSV e Jason) básico:
-1-https://youtu.be/10Pdysnsihg?si=8lghx9aWQEDl22qm
-2-https://youtu.be/xIC2xyLmo7M?si=-PQMaqTtpCa_to_Z
-3-https://youtu.be/6iAOrL5TBe8?si=wc_7uSI8rwiljsCa
-4-https://youtu.be/yNFiFQ-AI4Q?si=55I72FgNSQV_CDOm
-5-https://youtu.be/S26BbiBC4lY?si=iBQg4hGZZT74YsbN
+    1-https://youtu.be/10Pdysnsihg?si=8lghx9aWQEDl22qm
+    2-https://youtu.be/xIC2xyLmo7M?si=-PQMaqTtpCa_to_Z
+    3-https://youtu.be/6iAOrL5TBe8?si=wc_7uSI8rwiljsCa
+    4-https://youtu.be/yNFiFQ-AI4Q?si=55I72FgNSQV_CDOm
+    5-https://youtu.be/S26BbiBC4lY?si=iBQg4hGZZT74YsbN
 '''
