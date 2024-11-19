@@ -72,10 +72,10 @@ with open('meuarquivo.txt', 'r') as f:
 
 '''
 1-Vídeo sobre manipulação de arquivos de texto(ler, editar e criar):
-https://youtu.be/AvUG8wZMh_E?si=QBniMd1Hx01b3OF0
+    https://youtu.be/AvUG8wZMh_E?si=QBniMd1Hx01b3OF0
 
 2-Vídeo sobre manipulação de arquivos(iniciantes):
-https://youtu.be/G-kUBX0U8IQ?si=panU0A24lANsLW0I
+    https://youtu.be/G-kUBX0U8IQ?si=panU0A24lANsLW0I
 
 3-Série de vídeos sobre manipulação de arquivos(txt, CSV e Jason) básico:
     1-https://youtu.be/10Pdysnsihg?si=8lghx9aWQEDl22qm
