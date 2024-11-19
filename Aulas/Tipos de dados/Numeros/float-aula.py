@@ -28,3 +28,13 @@ print(type(b))
 c = 10
 d = float(c)
 print(d)
+
+# Input:
+  # você pode utilizar a função "float()" para converter os dados do input de texto para números decimais.
+
+# Sintaxe:
+  # variavel = float(input("pergunta"))
+
+#Ex.:
+e = float(input("Digite um número decimal"))
+print(type(e), " ", e)
