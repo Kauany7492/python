@@ -37,4 +37,4 @@ print(d)
 
 #Ex.:
 e = int(input("Digite um número inteiro"))
-print(type(e))
+print(type(e), " ", e)
