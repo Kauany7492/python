@@ -85,8 +85,15 @@ print(g.split(","))
   # {numero operador numero} - utilizado para fazer contas dentro de uma strring.
 
 # SINTAXE:
-  # f"string {variavel, modulo ou numero}" 
+  # f"string {variavel, modulo ou conta}" 
 
-#Ex.:
+#Ex.1:
 h = 16
 print(f"Eu tenho {h} anos")
+
+#Ex.2:
+i = 20
+print(f"A camisa custa R${i:.2f}")
+
+#Ex.3:
+print(f"2 + 3 = {2+3}")
