@@ -14,8 +14,8 @@ print("ola")
   # "string \n"
 
 #Ex.:
-nova-linha = "folha,\ncaule,\nterra"
-print(nova-linha)
+pula-linha = "folha,\ncaule,\nterra"
+print(pula-linha)
 
 # FUNÇÃO LEN():
   # retorna o comprimento da string.
@@ -97,3 +97,14 @@ print(f"A camisa custa R${i:.2f}")
 
 #Ex.3:
 print(f"2 + 3 = {2+3}")
+
+# Conversão:
+  # você pode converter números em textos.
+
+# Sintaxe:
+  # str(variavel)
+
+# Ex.:
+c = 10.5
+d = str(c)
+print(type(d))
