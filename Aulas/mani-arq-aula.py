@@ -39,8 +39,8 @@ f = open('meuarquivo.txt', 'r')
 print(f.read()) 
 f.close()
 
-# APROFUNDAMENTO:
-    # você pode escrever o mesmo código acima usando uma função "with".
+# FUNÇÃO - WITH:
+    # você pode escrever o mesmo código acima usando uma função "with" de uma maneira mais simples.
     # com a função "with" você não precisa fechar o arquivo, a função fecha automática.
 
 # SINTAXE:
