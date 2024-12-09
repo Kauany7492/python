@@ -28,3 +28,15 @@ while len(nomes) > 4:
 
     else:
         print("Escolha inválida")
+
+# Outra maneira de resolver:
+nomes = ["Alana", "Kauany", "Lucas", "Nata", "Rafhael"]
+
+while len(nomes) > 4:
+    print(nomes)
+    escolha = input("Quem sera removido: ")
+    
+    for x in nomes:
+        if x == escolha:
+            nomes.remove(x)
+    print(nomes)
